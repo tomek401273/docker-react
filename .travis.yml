@@ -4,6 +4,6 @@ services:
 
 before_install:
   - docker build -t tom/docker-react -f Dockerfile.dev .
-scripts:
+script:
   - docker run tom/docker-react npm run test -- --coverage
 
